@@ -3,10 +3,370 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+line-height: 1.7;
+color: gray;
+font-weight: 300;
+font-size: 1rem;
+font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.dot{
+    color: #00d2b5;
+}
 #home-section{
-    height: 100vh;
+    min-height: 100vh;
+    /* text-align: center; */
 }
 .video-image{
     max-width: 100%;
     height: auto;
 }
+.video-image img{
+    width: 100%;
+}
+.home-section{
+    height: 100%;
+   
+}
+.home-right h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 30px;
+   
+
+}
+.btn-primary{
+    border-width: 2px;
+    background: #00d2b5;
+    border-color: #00d2b5;
+    color: #fff;
+    box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+}
+.btn-primary:hover{
+    background-color: #fff;
+    color: black;
+    border-color: #00d2b5;;
+}
+#features-section{
+    min-height: 100%;
+    background-color: whitesmoke;
+}
+#features-section h2{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.cardt{
+    min-height: 275px;
+    /* border: 0; */
+    border-radius: 60px;
+   
+}
+.fetur-block{
+    padding: 30px;
+    
+    background-color: rgb(255, 255, 255);
+    transition: .3s all ease;
+    position: relative;
+    top: 0;
+}
+.icon-wrap{
+    background-color: #00d2b5;
+    width: 40px;
+    height: 40px;
+    
+   
+   border-radius: 50%;
+   display: flex;
+  
+   justify-content: center;
+   align-items: center;
+   box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
+   color: #fff;
+}
+.card :hover{
+    background-color: #00d2b5;
+}
+/* time line */
+
+
+.blue-bg {
+   
+    /* color: #00d2b5; */
+    height: 100%;
+  }
+  
+  .circle {
+    font-weight: 700;
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: #00d2b5;
+    color: white;
+    max-height: 50px;
+    z-index: 2;
+  }
+  
+  .how-it-works.row {
+    display: flex;
+  }
+  .how-it-works h5{
+      color: black;
+  }
+  .how-it-works.row .col-2 {
+    display: inline-flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-it-works.row .col-2::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid #00d2b5;
+    z-index: 1;
+  }
+  .how-it-works.row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+  }
+  .how-it-works.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+  }
+  .how-it-works.row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
+  }
+  
+  .timeline div {
+    padding: 0;
+    height: 40px;
+  }
+  .timeline hr {
+      border: 0;
+    border-top: 2px solid #00d2b5;
+    margin: 0;
+    top: 17px;
+    position: relative;
+    opacity: 1;
+    
+    
+    
+  }
+  .timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+  }
+  .timeline .corner {
+    border: 3px solid #00d2b5;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .timeline .top-right {
+    left: 50%;
+    top: -50%;
+  }
+  .timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+  }
+  .timeline .top-left {
+    left: -50%;
+    top: -50%;
+  }
+  .timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+  }
+ /* domain */
+ .domain-section{
+     background-color: whitesmoke;
+ }
+
+ .domain-box{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 50px;
+    transition: .3s all ease;
+    position: relative;
+    top: 0;
+ 
+   
+     
+ }
+ .domain-box:hover{
+    background-color: #00d2b5;
+    box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
+    top:-7px;
+   
+}
+ .align-items-stretch{
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+ }
+ .how-can-join img{
+     width: 100%;
+ }
+
+ .con{
+     max-width: 200px;
+     font-weight: 700;
+ }
+ .chat-box{
+     height: 100vh;
+     overflow: scroll;
+     /* overflow-x: hidden; */
+     padding: 10px;
+
+ }
+ .cv{
+     padding: 0 100px;
+ }
+ .contact{
+     margin-top: 150px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    
+     /* align-items: center; */
+
+ }
+ .address{
+     display: flex;
+     /* align-items: center; */
+     color: #000;
+    
+ }
+ .address a{
+     text-decoration: none;
+ }
+ .address a:hover{
+    color: #008673;
+}
+ .address p,a{
+     font-weight: 600;
+     font-size: 14px;
+     color: #00d2b5;
+ } 
+ /* chat */
+ .imessage {
+    background-color: #fff;
+    /* border: 1px solid #e5e5ea; */
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    font-family: "SanFrancisco";
+    font-size: 1.25rem;
+    /* margin: 0 auto 1rem; */
+    /* max-width: 100%; */
+    /* padding: 0.5rem 1.5rem; */
+  }
+  
+  .imessage p {
+    border-radius: 1.15rem;
+    line-height: 1.25;
+    max-width: 95%;
+    padding: 0.5rem .875rem;
+    position: relative;
+    word-wrap: break-word;
+  }
+  
+  .imessage p::before,
+  .imessage p::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+  }
+  
+  p.from-me {
+    align-self: flex-end;
+    background-color: #248bf5;
+    color: #fff; 
+  }
+  
+  p.from-me::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #248bf5;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.from-me::after {
+    background-color: #fff;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform:translate(-30px, -2px);
+    width: 10px;
+  }
+  
+  
+  p.from-them {
+    align-items: flex-start;
+    background-color: #e5e5ea;
+    color: #000;
+  }
+  
+  p.from-them:before {
+    border-bottom-right-radius: 0.8rem 0.7rem;
+    border-left: 1rem solid #e5e5ea;
+    left: -0.35rem;
+    transform: translate(0, -0.1rem);
+  }
+  
+  p.from-them::after {
+    background-color: #fff;
+    border-bottom-right-radius: 0.5rem;
+    left: 20px;
+    transform: translate(-30px, -2px);
+    width: 10px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* @media screen and (max-width: 800px) {
+    body {
+      margin: 0 0.5rem;
+    }
+  
+    .container {
+      padding: 0.5rem;
+    }
+  
+    .imessage {
+      font-size: 1.05rem;
+      margin: 0 auto 1rem;
+      max-width: 600px;
+      padding: 0.25rem 0.875rem;
+    }
+  
+    .imessage p {
+      margin: 0.5rem 0;
+    }
+  }
+ 
+
+
+
+     */
+
