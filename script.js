@@ -26,9 +26,10 @@ function validate(){
        
     
     }
-    else{
-        return false
-    }
+    // else{
+    //     return false
+    // }
+    console.log(names)
    
 
 }
