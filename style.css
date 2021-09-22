@@ -404,6 +404,36 @@ a{
      /* application */
      .main-section{
          background-color: whitesmoke;
-         min-height: 100vh;
+         min-height: 150vh;
      }
-
+     .form{
+         position: relative;
+         top: 50px;
+         background-color: white;
+         box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 15%);
+         
+     }
+     /* .form div{
+         margin-bottom: 20px;
+         
+     } */
+     input,select,textarea,button{
+         font-weight: 100;
+         width: 100%;
+         border: 0;
+         outline: none;
+         height: 60px;
+        
+      
+        
+     }
+     select{
+         width: auto;
+         background-color: white;
+     }
+     button{
+        background: #22c9b5;
+        border-radius: 5px;
+        color: #fff;
+     }
+   
