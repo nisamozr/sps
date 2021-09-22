@@ -71,16 +71,29 @@ a{
 }
 .fetur-block{
     padding: 30px;
-    
+    border-radius: 5px;
     background-color: rgb(255, 255, 255);
     transition: .3s all ease;
     position: relative;
-    top: 0;
+    
+   
+ 
+}
+.fetur-block:hover{
+    background-color: #00d2b5;
+    box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
+    top: -7px;
+
+}
+.fetur-block:hover .icon-wrap {
+   color: #00d2b5;
+   background-color: #fff;
 }
 .icon-wrap{
     background-color: #00d2b5;
     width: 40px;
     height: 40px;
+    
     
    
    border-radius: 50%;
@@ -225,7 +238,7 @@ a{
  .chat-box{
      height: 100vh;
      overflow: scroll;
-     /* overflow-x: hidden; */
+     overflow-x: hidden;
      padding: 10px;
 
  }
@@ -280,6 +293,9 @@ a{
     position: relative;
     word-wrap: break-word;
   }
+ small{
+     align-items: flex-end;
+ }
   
   .imessage p::before,
   .imessage p::after {
@@ -291,13 +307,14 @@ a{
   
   p.from-me {
     align-self: flex-end;
-    background-color: #248bf5;
+    background-color: #00d2b5;
     color: #fff; 
+    
   }
   
   p.from-me::before {
     border-bottom-left-radius: 0.8rem 0.7rem;
-    border-right: 1rem solid #248bf5;
+    border-right: 1rem solid #00d2b5;
     right: -0.35rem;
     transform: translate(0, -0.1rem);
   }
@@ -331,7 +348,21 @@ a{
     transform: translate(-30px, -2px);
     width: 10px;
   }
-  
+  .gf{
+      position: relative;
+      top:-30px;
+      transition: .7s all ease;
+  }
+  .gf:hover{
+     
+      top: 0;
+
+  }
+  .user{
+      display: flex;
+      justify-content: end;
+      align-items: flex-end;
+  }
   
   
   
@@ -369,4 +400,10 @@ a{
 
 
      */
+
+     /* application */
+     .main-section{
+         background-color: whitesmoke;
+         min-height: 100vh;
+     }
 
