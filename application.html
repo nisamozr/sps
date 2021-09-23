@@ -30,11 +30,11 @@
         <div class="container ">
             <div class="form p-5 ">
                 <h2>REGISTRATION</h2>
-                <form action=""  onsubmit="validate() "  method="post">
+                <form onsubmit="return validatform()" action="/"  id="form"  method="post">
 
                     <div class="col-12 border-bottom ">
                         <input type="text" placeholder="Full Name" id="name" class="border-0">
-                      <small class="namef"></small>
+                      <span id="name1" class="sss"></span>
                     </div>
 
                     <div class="row">
@@ -42,7 +42,7 @@
                         <div class="col-12 col-md-6 ">
                             <div class=" border-bottom h-100">
                                 <input type="tel" placeholder="Contact No" id="phone" name="phone">
-                                <small class="name2">dsfd</small>
+                                <span id="name2" class="sss"></span>
                             </div>
                         </div>
 
@@ -56,7 +56,7 @@
                                     <option value="2">Female</option>
 
                                 </select>
-                                <small class="name3">fgfg</small>
+                                <span id="name3" class="sss"></span>
                                
                             </div>
 
@@ -65,7 +65,7 @@
 
                     <div class="col-12 border-bottom ">
                         <input type="email" placeholder="Email" id="email" name="email" class="border-0">
-                        <small class="name4">fgfg</small>
+                        <span id="name4" class="sss"></span>
                     </div>
 
                     <div class="row">
@@ -73,7 +73,7 @@
                         <div class="col-12 col-md-6 ">
                             <div class=" border-bottom">
                                 <input type="text" placeholder="Place" id="place" name="place">
-                                <small class="name5">fgfg</small>
+                                <span id="name5" class="sss"></span>
                             </div>
                         </div>
 
@@ -85,7 +85,7 @@
                                     <option value="Fresher">Fresher</option>
                                     <option value="Student">Student</option>
                                 </select>
-                                <small class="name6"></small>
+                                <span id="name6" class="sss"></span>
                             </div>
 
                         </div>
@@ -98,24 +98,25 @@
                             <option value="bsc">bsc</option>
                             <option value="other">other</option>
                         </select>
-                        <small class="name7"></small>
+                        <span id="name7 " class="sss"></span>
                     </div>
 
 
                     <div class="col-12 border-bottom ">
                         <input type="text" placeholder="Name of Collage/ Organisation" id="collage" class="border-0">
-                        <small class="name8"></small>
+                        <span id="name8 " class="sss"></span>
                     </div>
                     <div class="col-6 border-bottom ">
                         <input type="number" placeholder="Year of Graduation" id="graduateYear">
-                        <small class="name9"></small>
+                        <span id="name9 " class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <textarea name=""  cols="30" placeholder="Tell us more about you" id="aboutAs" rows="2"></textarea>
-                        <small class="name10">fgfg</small>
+                        <span id="name10 " class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <textarea name="" cols="30" placeholder="Why do you want to join SPS?" id="joinSps" rows="2"></textarea>
+                        <span id="name11 " class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <textarea name=""  cols="30" placeholder="What motivates you to work hard every day?" id="workHard" rows="2"></textarea>
