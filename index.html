@@ -17,7 +17,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- fond -->
@@ -50,7 +50,17 @@
 
             <div class="row home-section">
                 <div class="col-12 col-md-7 video-image">
-                    <img src="images/sps-vidio-img.png" alt="">
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        
+                        <img src="images/sps-vidio-img.png" style="cursor:pointer" alt="">
+                     </div>
+                     <div style="display:none">
+                        <div class="embed-responsive embed-responsive-16by9 mb-5">
+                            <iframe id="vid1" class="embed-responsive-item" src="https://www.youtube.com/embed/I9QGnNvrmoY?enablejsapi=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                          </div>
+                         <!-- Embed code here -->
+                     </div>
+                 
 
 
                 </div>
@@ -88,7 +98,7 @@
 
                         </div>
                         <div class="featur text">
-                            <h3>Win like an army</h3>
+                            <h3 >Win like an army</h3>
                             <p>We work as a team because we get paid only when you get paid.</p>
 
                         </div>
@@ -146,7 +156,17 @@
         <div class="container ">
             <div class="row  border-bottom">
                 <div class="col-lg-7 video-image">
-                    <img src="images/sps-video2.png" alt="">
+                    <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        
+                        <img src="images/sps-video2.png" style="cursor:pointer" alt="">
+                     </div>
+                     <div style="display:none">
+                        <div class="embed-responsive embed-responsive-16by9 mb-5">
+                            <iframe id="" class="embed-responsive-item" src="https://www.youtube.com/embed/ckub1RSlhic?enablejsapi=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                          </div>
+                         <!-- Embed code here -->
+                     </div>
+                   
 
                 </div>
                 <div class="col-lg-5">
@@ -334,7 +354,17 @@
                 </div>
                 <div class="row">
                     <div class="col-12 how-can-join">
-                        <img src="images/whocanjoinsps.png" alt="">
+                        <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        
+                            <img src="images/whocanjoinsps.png" style="cursor:pointer" alt="">
+                         </div>
+                         <div style="display:none">
+                            <div class="embed-responsive embed-responsive-16by9 mb-5">
+                                <iframe id="vid1" class="embed-responsive-item" src="https://www.youtube.com/embed/xkmM6h32lnM?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                              </div>
+                             <!-- Embed code here -->
+                         </div>
+                       
                     </div>
                 </div>
                 <div class="row">
@@ -404,7 +434,17 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <img class="w-100" src="images/howmuchdoesitcost.png" alt="">
+                        <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none';onPlayer5click()">
+                        
+                            <img src="images/howmuchdoesitcost.png" style="cursor:pointer ;width: 100%;" alt="">
+                         </div>
+                         <div style="display:none">
+                            <div class="embed-responsive embed-responsive-16by9 mb-5">
+                                <iframe id="vid1" class="embed-responsive-item" src="https://www.youtube.com/embed/xkmM6h32lnM?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                              </div>
+                             <!-- Embed code here -->
+                         </div>
+                       
                     </div>
                 </div>
 
@@ -421,7 +461,18 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <img class="w-100" src="images/ConvocationCeremony.png" alt="">
+                        <div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'">
+                        
+                            <img src="images/ConvocationCeremony.png" style="cursor:pointer; width: 100%;" alt="">
+                         </div>
+                         <div style="display:none">
+                            <div class="embed-responsive embed-responsive-16by9 mt-5 mb-5">
+                                <iframe id="vid5" class="embed-responsive-item" src="https://www.youtube.com/embed/m_hx0Ebg5Yo?enablejsapi=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                              </div>
+                             <!-- Embed code here -->
+                         </div>
+                       
+                        
                     </div>
                 </div>
             </div>
@@ -539,11 +590,11 @@
 
     </div>
     <footer>
-        <div class="row">
-            <div class="col-12 text-center">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
+        <div class="row footers">
+            <div class="col-12 text-center footer">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
 
             </div>
             <div class="col-12 text-center">

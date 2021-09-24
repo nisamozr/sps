@@ -28,6 +28,7 @@
     </div>
     <div class="main-section">
         <div class="container ">
+                <div class="container">
             <div class="form p-5 ">
                 <h2>REGISTRATION</h2>
                 <form onsubmit="return validatform()" action="/"  id="form"  method="post">
@@ -50,8 +51,8 @@
                             
                             <div class=" border-bottom h-100">
                                 
-                                <select class="" id="gender">
-                                    <option selected>Gender</option>
+                                <select id="gender">
+                                    <option selected value="">Gender</option>
                                     <option value="1">Male</option>
                                     <option value="2">Female</option>
 
@@ -80,7 +81,7 @@
                         <div class="col-12 col-md-6 ">
                             <div class=" border-bottom">
                                 <select class="" aria-label=".form-select-sm example" id="employee">
-                                    <option selected>Employee status </option>
+                                    <option selected value="">Employee status </option>
                                     <option value="Employee">Employee</option>
                                     <option value="Fresher">Fresher</option>
                                     <option value="Student">Student</option>
@@ -92,51 +93,54 @@
                     </div>
                     <div class="col-12 border-bottom ">
                         <select class="" aria-label=".form-select-sm example" id="qualification">
-                            <option selected>Education Qualification </option>
+                            <option selected value="">Education Qualification </option>
                             <option value="b-tech">B-tech</option>
                             <option value="bca">bca</option>
                             <option value="bsc">bsc</option>
                             <option value="other">other</option>
                         </select>
-                        <span id="name7 " class="sss"></span>
+                        <span id="name7" class="sss"></span>
                     </div>
 
 
                     <div class="col-12 border-bottom ">
                         <input type="text" placeholder="Name of Collage/ Organisation" id="collage" class="border-0">
-                        <span id="name8 " class="sss"></span>
+                        <span id="name8" class="sss"></span>
                     </div>
                     <div class="col-6 border-bottom ">
                         <input type="number" placeholder="Year of Graduation" id="graduateYear">
-                        <span id="name9 " class="sss"></span>
+                        <span id="name9" class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <textarea name=""  cols="30" placeholder="Tell us more about you" id="aboutAs" rows="2"></textarea>
-                        <span id="name10 " class="sss"></span>
+                        <span id="name10" class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <textarea name="" cols="30" placeholder="Why do you want to join SPS?" id="joinSps" rows="2"></textarea>
-                        <span id="name11 " class="sss"></span>
+                        <span id="name11" class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <textarea name=""  cols="30" placeholder="What motivates you to work hard every day?" id="workHard" rows="2"></textarea>
+                        <span id="name12" class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom ">
                         <select class="" aria-label=".form-select-sm example" id="spsnews">
-                            <option selected>From where did you learn about SPS?</option>
+                            <option selected value="">From where did you learn about SPS?</option>
                             <option value="1">Crossroads youtube</option>
                             <option value="2">youtube</option>
                             <option value="3">Friends</option>
                             <option value="4">Facebook</option>
                             <option value="5">Whatsupp</option>
                         </select>
+                        <span id="name13" class="sss"></span>
                     </div>
                     <div class="col-12 border-bottom">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="faqs">
+                            <input class="form-check-input" type="checkbox" value="genter" id="faqs">
                             <label class="form-check-label" for="flexCheckDefault">
                                 I agree that I have read and understood all the <a href="">FAQs</a>
                             </label>
+                            <span id="name14" class="sss"></span>
                           </div>
                     </div>
                     <div class="col-12 mt-5">
@@ -150,8 +154,14 @@
                 </form>
 
             </div>
+        </div>
+       
 
         </div>
+    </div>
+    <div class="c text-center pt-5 mb-5">
+        <p class="5">Copyright ©Packapeer Academy Pvt Ltd 2021</p>
+
     </div>
 
 </body>

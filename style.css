@@ -79,11 +79,22 @@ a{
    
  
 }
+.fetur-block h3{
+  color: #000;
+}
 .fetur-block:hover{
     background-color: #00d2b5;
     box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
     top: -7px;
+      
+  
 
+}
+.fetur-block:hover h3{
+  color: #fff;
+}
+.fetur-block:hover p{
+  color: rgb(204, 240, 241);
 }
 .fetur-block:hover .icon-wrap {
    color: #00d2b5;
@@ -408,13 +419,19 @@ a{
      /* application */
      .main-section{
          background-color: whitesmoke;
-         min-height: 150vh;
+         min-height: 1000px;
+         position: relative;
+         padding: 0 200px;
+         padding-top: 50px ;
+
      }
      .form{
-         position: relative;
+        
          top: 50px;
          background-color: white;
          box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 15%);
+         border-radius: 10PX;
+         margin-bottom: 100px;
          
      }
      /* .form div{
@@ -443,4 +460,28 @@ a{
      .form span{
        color: red;
      }
+     .form h2{
+       color: #22d1b5;
+       text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 37px;
+     }
+     .c{
+       background-color: white;
+   
+     }
+     .footer i{
+      margin-right: 30px;
+      color: #00d2b5;
+     }
+     footer i:hover{
+      color: #008673;
+      cursor: pointer;
+     }
+     .footers{
+       border-top: 1px solid whitesmoke;
+       height: 200px;
+       padding-top: 50px;
+     }
+     
    
