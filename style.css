@@ -9,6 +9,7 @@ color: gray;
 font-weight: 300;
 font-size: 1rem;
 font-family: 'Montserrat', sans-serif;
+width: 100%;
 }
 a{
     text-decoration: none;
@@ -30,6 +31,27 @@ a{
 .home-section{
     height: 100%;
    
+}
+#myBtn {
+  width: auto;
+  height: auto;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #00d2b5; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #008673; /* Add a dark-grey background on hover */
 }
 .home-right h2{
     font-size: 40px;
@@ -75,13 +97,19 @@ a{
     background-color: rgb(255, 255, 255);
     transition: .3s all ease;
     position: relative;
+    min-height: 250px;
     
    
  
 }
 .fetur-block h3{
   color: #000;
+  font-size: 18px;
 }
+.fetur-block p{
+  font-size: 14px;
+}
+
 .fetur-block:hover{
     background-color: #00d2b5;
     box-shadow: 0 4px 20px -5px rgb(0 210 181 / 40%);
@@ -254,9 +282,23 @@ a{
      height: 100vh;
      overflow: scroll;
      overflow-x: hidden;
+     
      padding: 10px;
+    
 
  }
+ .chat-box::-webkit-scrollbar {
+  width: 3px;
+  
+ 
+}
+.chat-box::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+
+  background-color: #999;
+  
+ 
+}
  .cv{
      padding: 0 100px;
  }
@@ -293,8 +335,8 @@ a{
     border-radius: 0.25rem;
     display: flex;
     flex-direction: column;
-    font-family: "SanFrancisco";
-    font-size: 1.25rem;
+    /* font-family: "m"; */
+    font-size: 1.0rem;
     /* margin: 0 auto 1rem; */
     /* max-width: 100%; */
     /* padding: 0.5rem 1.5rem; */
@@ -308,10 +350,8 @@ a{
     position: relative;
     word-wrap: break-word;
   }
- small{
-     align-items: flex-end;
- }
-  
+
+
   .imessage p::before,
   .imessage p::after {
     bottom: -0.1rem;
@@ -363,21 +403,47 @@ a{
     transform: translate(-30px, -2px);
     width: 10px;
   }
+  small{
+   
+    font-size: 10px;
+    cursor: none;
+    
+}
   .gf{
       position: relative;
       top:-30px;
-      transition: .7s all ease;
-  }
-  .gf:hover{
-     
-      top: 0;
+      transition: all 1s;
+      cursor: default;
+      
 
   }
-  .user{
-      display: flex;
-      justify-content: end;
-      align-items: flex-end;
+  .gf p{
+    font-size: 14px;
+    font-weight: 100;
   }
+  .user{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 20px;
+  
+  
+
+}
+.send{
+  margin-left: 20px;
+}
+
+  .gf:hover {
+     
+      top: 0;
+     
+      
+
+  }
+  
+ 
+ 
   
   
   
@@ -483,5 +549,8 @@ a{
        height: 200px;
        padding-top: 50px;
      }
+
+
+     
      
    
