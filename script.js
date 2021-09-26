@@ -37,13 +37,16 @@ function validatform(){
     }
   
     
-  
+    var a = /^\d{10}$/
     if(phone.value == ""){
         document.getElementById('name2').innerHTML= "This field is required";
-        
-      
+ 
     }
-    if(phone.value != ""){
+    else if(!a.test(phone.value)){
+        document.getElementById('name2').innerHTML= "Invalid format.";
+
+    }
+    else if(phone.value != ""){
         document.getElementById('name2').innerHTML= "";
         
       
@@ -56,16 +59,15 @@ function validatform(){
         document.getElementById('name3').innerHTML= "";
         
     }
-    var pattern = /^[a-zA-Z0-9\-_]+(\.[a-zA-Z0-9\-_]+)*@[a-z0-9]+(\-[a-z0-9]+)*(\.[a-z0-9]+(\-[a-z0-9]+)*)*\.[a-z]{2,4}$/;
+    var pattern =/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if(email.value == ''){
         document.getElementById('name4').innerHTML= "This field is required";
         
-    }else if(!pattern.test(email)){
+    }
+    else if(!pattern.test(email.value)){
         document.getElementById('name4').innerHTML= "Please enter a valid email address.";
         
-    }
-  
-    if(email.value != ''){
+    }else{
         document.getElementById('name4').innerHTML= "";
         
     }
@@ -120,7 +122,7 @@ function validatform(){
         document.getElementById('name10').innerHTML= "This field is required";
        
     }
-    if(aboutAs.value == ''){
+    if(aboutAs.value != ''){
         document.getElementById('name10').innerHTML= "";
        
     }
@@ -151,7 +153,7 @@ function validatform(){
         document.getElementById('name13').innerHTML= "";
        
     }
-    if(faqs.value == ''){
+    if(!faqs.checked){
         document.getElementById('name14').innerHTML= "This field is required";
         
     }
